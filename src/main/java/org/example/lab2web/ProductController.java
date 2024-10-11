@@ -9,6 +9,9 @@ public class ProductController {
 
     @GetMapping("/products/{productId}")
     public Product getProduct(@PathVariable int productId) {
+        int a = 5;
+        int b = 7;
+
         return new Product(productId, productId + " name");
     }
 }
